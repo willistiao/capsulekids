@@ -1,3 +1,4 @@
+import 'regenerator-runtime/runtime';
 import * as THREE from "three";
 
 export default function createScene() {

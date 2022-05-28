@@ -40637,6 +40637,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = createCube;
 
+require("regenerator-runtime/runtime");
+
 var THREE = _interopRequireWildcard(require("three"));
 
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
@@ -40655,13 +40657,15 @@ function createCube(_ref) {
   cube.position.set(x, y, 0);
   return cube;
 }
-},{"three":"node_modules/three/build/three.module.js"}],"js/createLight.js":[function(require,module,exports) {
+},{"regenerator-runtime/runtime":"node_modules/regenerator-runtime/runtime.js","three":"node_modules/three/build/three.module.js"}],"js/createLight.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = createLight;
+
+require("regenerator-runtime/runtime");
 
 var THREE = _interopRequireWildcard(require("three"));
 
@@ -40674,7 +40678,7 @@ function createLight() {
   light.position.set(0, 0, 10);
   return light;
 }
-},{"three":"node_modules/three/build/three.module.js"}],"js/animate.js":[function(require,module,exports) {
+},{"regenerator-runtime/runtime":"node_modules/regenerator-runtime/runtime.js","three":"node_modules/three/build/three.module.js"}],"js/animate.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -40698,6 +40702,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = createCamera;
 
+require("regenerator-runtime/runtime");
+
 var THREE = _interopRequireWildcard(require("three"));
 
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
@@ -40709,13 +40715,15 @@ function createCamera() {
   camera.position.z = 5;
   return camera;
 }
-},{"three":"node_modules/three/build/three.module.js"}],"js/createRenderer.js":[function(require,module,exports) {
+},{"regenerator-runtime/runtime":"node_modules/regenerator-runtime/runtime.js","three":"node_modules/three/build/three.module.js"}],"js/createRenderer.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = createRenderer;
+
+require("regenerator-runtime/runtime");
 
 var THREE = _interopRequireWildcard(require("three"));
 
@@ -40732,13 +40740,15 @@ function createRenderer() {
   app.appendChild(renderer.domElement);
   return renderer;
 }
-},{"three":"node_modules/three/build/three.module.js"}],"js/createScene.js":[function(require,module,exports) {
+},{"regenerator-runtime/runtime":"node_modules/regenerator-runtime/runtime.js","three":"node_modules/three/build/three.module.js"}],"js/createScene.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = createScene;
+
+require("regenerator-runtime/runtime");
 
 var THREE = _interopRequireWildcard(require("three"));
 
@@ -40751,7 +40761,7 @@ function createScene() {
   scene.background = new THREE.Color(0xffffff);
   return scene;
 }
-},{"three":"node_modules/three/build/three.module.js"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/node_modules/process/browser.js":[function(require,module,exports) {
+},{"regenerator-runtime/runtime":"node_modules/regenerator-runtime/runtime.js","three":"node_modules/three/build/three.module.js"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/node_modules/process/browser.js":[function(require,module,exports) {
 
 // shim for using process in browser
 var process = module.exports = {}; // cached from whatever global is present so that test runners that stub it
@@ -42102,8 +42112,6 @@ exports.InteractiveObject = c;
 },{"three":"node_modules/three/build/three.module.js"}],"js/index.js":[function(require,module,exports) {
 "use strict";
 
-require("regenerator-runtime/runtime");
-
 var _createCube = _interopRequireDefault(require("./createCube"));
 
 var _createLight = _interopRequireDefault(require("./createLight"));
@@ -42200,7 +42208,7 @@ scene.add(light);
   interactionManager.update();
   TWEEN.update(time);
 });
-},{"regenerator-runtime/runtime":"node_modules/regenerator-runtime/runtime.js","./createCube":"js/createCube.js","./createLight":"js/createLight.js","./animate":"js/animate.js","./createCamera":"js/createCamera.js","./createRenderer":"js/createRenderer.js","./createScene":"js/createScene.js","@tweenjs/tween.js":"node_modules/@tweenjs/tween.js/dist/tween.esm.js","three.interactive":"node_modules/three.interactive/build/three.interactive.js"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./createCube":"js/createCube.js","./createLight":"js/createLight.js","./animate":"js/animate.js","./createCamera":"js/createCamera.js","./createRenderer":"js/createRenderer.js","./createScene":"js/createScene.js","@tweenjs/tween.js":"node_modules/@tweenjs/tween.js/dist/tween.esm.js","three.interactive":"node_modules/three.interactive/build/three.interactive.js"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
