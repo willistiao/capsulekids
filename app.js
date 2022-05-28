@@ -1,13 +1,13 @@
 import * as THREE from 'three';
-
+import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls.js';
+import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader.js';
 // init
 
 // Three.js - Load .OBJ ?
 // from https://r105.threejsfundamentals.org/threejs/threejs-load-obj-no-materials.html
 
 
-import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls.js';
-import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader.js';
+
 
 function main() {
   const canvas = document.querySelector('#c');
