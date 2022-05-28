@@ -1,3 +1,4 @@
+import "regenerator-runtime/runtime";
 import createCube from "./createCube";
 import createLight from "./createLight";
 import animate from "./animate";
