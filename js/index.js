@@ -5,7 +5,7 @@ import animate from "./animate";
 import createCamera from "./createCamera";
 import createRenderer from "./createRenderer";
 import createScene from "./createScene";
-import * as TWEEN from "@tweenjs/tween.js";
+import * as TWEEN from "../node_modules/@tweenjs/tween.js";
 import { InteractionManager } from "three.interactive";
 
 const renderer = createRenderer();
